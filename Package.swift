@@ -3,12 +3,12 @@ import PackageDescription
 
 let package = Package(
     name: "XMediatorFacebook",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(name: "XMediatorFacebook", targets: ["XMediatorFacebookTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/facebook/FBAudienceNetwork.git", exact: "6.21.1"),
+        .package(url: "https://github.com/facebook/FBAudienceNetwork.git", exact: "6.22.0"),
         .package(url: "https://github.com/x3mads/xmediator-swift-package.git", .upToNextMajor(from: "1.145.0")),
     ],
     targets: [
@@ -20,14 +20,12 @@ let package = Package(
                 .product(name: "FBAudienceNetwork", package: "FBAudienceNetwork"),
             ],
             path: "XMediatorFacebookTarget",
-            linkerSettings: [
-                .linkedFramework("AdSupport"),
-            ]
+            linkerSettings: []
         ),
         .binaryTarget(
             name: "XMediatorFacebook",
-            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorFacebook/XMediatorFacebook-6.21.1.0.zip",
-            checksum: "938af1a0ffda22e6827c30ffb5e48b3627634ad287907428b406c9a1f5151918"
+            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorFacebook/XMediatorFacebook-6.22.0.0.zip",
+            checksum: "c95578d13fc2e022298d6e910a6f4fe6169137054ef93a9d087eefd01029495c"
         ),
     ]
 )
