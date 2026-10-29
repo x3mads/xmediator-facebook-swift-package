@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "XMediatorFacebook", targets: ["XMediatorFacebookTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/facebook/FBAudienceNetwork.git", exact: "6.22.0"),
+        .package(url: "https://github.com/facebook/FBAudienceNetwork.git", exact: "6.22.1"),
         .package(url: "https://github.com/x3mads/xmediator-swift-package.git", .upToNextMajor(from: "1.145.0")),
     ],
     targets: [
@@ -24,8 +24,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "XMediatorFacebook",
-            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorFacebook/XMediatorFacebook-6.22.0.0.zip",
-            checksum: "c95578d13fc2e022298d6e910a6f4fe6169137054ef93a9d087eefd01029495c"
+            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorFacebook/XMediatorFacebook-6.22.1.0.zip",
+            checksum: "ed6525d1deccac02cc7da3ec0fe25af6240c37661956a69a266d630b9566427e"
         ),
     ]
 )

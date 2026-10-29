@@ -18,7 +18,7 @@ To integrate `XMediatorFacebook` into your Xcode project using Swift Package Man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/x3mads/xmediator-facebook-swift-package", exact: "6.22.000")
+    .package(url: "https://github.com/x3mads/xmediator-facebook-swift-package", exact: "6.22.100")
 ]
 ```
 
